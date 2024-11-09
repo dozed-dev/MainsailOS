@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Shebang for better file detection
+# shellcheck enable=require-variable-braces
+
+BASE_ARCH="arm64"
+
+# Image source
+DOWNLOAD_BASE_URL="https://github.com/armbian/community/releases/download/24.11.0-trunk.351"
+DOWNLOAD_URL_CHECKSUM="${DOWNLOAD_BASE_URL}/Armbian_community_24.11.0-trunk.351_Orangepilite2_bookworm_current_6.6.54_minimal.img.xz.sha256"
+DOWNLOAD_URL_IMAGE="${DOWNLOAD_BASE_URL}/Armbian_community_24.11.0-trunk.351_Orangepilite2_bookworm_current_6.6.54_minimal.img.xz"
+
+# export Variables
+export BASE_ARCH
+export DOWNLOAD_URL_CHECKSUM
+export DOWNLOAD_URL_IMAGE
+
+### JSON sniplet Setup
+### NOTE: Please see all config files for setup variables!!!
+# shellcheck disable=SC2034
+JSON_PRETTY_SBC_NAME="Orange Pi Lite 2"
+# shellcheck disable=SC2034
+JSON_SUPPORTED_SBC="orangepilite2-64bit"
