@@ -22,6 +22,7 @@ export BASE_IMAGE_ENLARGEROOT
 export BASE_IMAGE_RESIZEROOT
 export BASE_RELEASE_COMPRESS
 export MODULES
+export PKGUPGRADE_DISTUPGRADE_METHOD
 
 ### JSON sniplet Setup
 ### NOTE: Please see all config files for setup variables!!!
